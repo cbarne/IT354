@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<link rel="shortcut icon" type="image/png" href="https://static-cdn.jtvnw.net/emoticons/v1/1576962/3.0" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link type="text/css" rel="stylesheet" href="./style.css" />
+<title>Assignment 1</title>
+</head>
+<body class="assign-1">
+<div class="imagecover"></div>
+<div class="container-fluid">
+  
+<nav class="navbar navbar-expand-xl navbar-expand-sm" id="bar">
+    <a class="navbar-brand "><h1>| IT354 |</h1></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <i class="fa fa-bars"></i>
+      </span>
+    </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="index.html" ><b>Home </b></a>
+
+      <div class="dropdown show" id="assignments">
+        <a class="btn btn-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Assignments</a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item active" id="hoverlinkactive" href="assign1.html" >Assignment 1<span class="sr-only">(current)</span></a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="hoverlink" href="#">Assignment 2</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="hoverlink" href="#">Assignment 3</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="hoverlink" href="https://youtu.be/YsHZ8RBAgqM"><img id="tank" src="images/pandafite.png" alt="404 Error" height="100%" width="100%"></a>
+        </div>
+      </div>
+
+      <div class="dropdown show" id="videos">
+        <a class="btn btn-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Videos</a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" id="hoverlink" href="#">Video Assign 1</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="hoverlink" href="#">Video Assign 2</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="hoverlink" href="#">Video Assign 3</a>
+        </div>
+      </div>
+
+  
+      
+     
+    </div>
+  </div>
+
+
+</nav>
+
+	<main>
+		<div class="row">
+			<div class="col-sm-2 col-md-3 col-lg-4" id="col-a1">
+              <h2> Values and Types</h2>
+              <section>
+                  <p>IsNaN</p>
+                  <br>
+                  <p>It is the asking of "Is Not A Number" which is automatically true on return unless stated false.</p>
+                  <p>So for example one can not divide zero by zero since it becomes NaN.</p>
+                  <br>
+                  <p>Yet in the case of examples:</p>
+                  <br>
+                  <p>isNaN(5): Is 5 not a 5 so false<br>isNaN('a'):True since 'a' is not a number<br>isNaN(null)it will be false since it starts at 0.<br>
+                  </p>
+            </section>
+                
+			</div>
+			
+			<div class="col-sm-2 col-md-3 col-lg-4" id="col-a2">
+                <h2> Unary Operators</h2>
+                <section>
+                  <br>
+                    <p>Plus - Minus</p>
+                    <br>
+                    <p>The plus helps to change the string of numbers, booleans, and null to numbers. It must be an arthmetic type, else it will result in an error.</p>
+                    <p>The minus is the exact same except it is producing the negative of the operator. </p>
+                    
+                    <p>So it will look something like this: "int x = -20; // x is -20 int y = +x; // y is -20"</p>
+
+                    <br>
+                    <p>Delete</p>
+                    <br>
+                    <p>It will return the boolean value if the property is properly deleted or it simply is returned. It wont work with variables since it returns boolean values, and it will not work with functions.</p>
+                   
+                 </section>
+			</div>
+				
+			<div class="col-sm-2 col-md-3 col-lg-4" id="col-a3">
+                <h2> Hoisting</h2>
+                <section>
+                  <br>
+                    <p>It is when the logical processing gets reversed. So what is at the bottom goes ot the top.</p>
+                    <br>
+                    <p>So something like this: <br>x= 5<br>x<br>var x;<br> Which then calls the 5 from up top as it is declared from the bottom.</p>
+                </section>
+             </div>
+      
+        </div>
+    
+	</main>
+
+		<footer>
+		<div class="rowfooter">	
+				<div class="col-med-12 fixed-bottom" id="foot"><p>CB | <a class="btn" href="#"><i class="fab fa-twitch"></i></a</i></a> <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a> <a class="btn" href="#"><i class="fab fa-instagram"></i></a> <a class="btn" href="#"><i class="fab fa-twitter"></i></a>| &copy; 2020 </p></div> 
+		</div>
+    </footer>
+	</div>
+</div>
+</div>
+</body>
+</html>
