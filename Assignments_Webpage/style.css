@@ -5,12 +5,12 @@ body {
 	height:100%;
 	z-index: auto;
 }
-body.assign-1{
+/*---body.assign-1{
 	background-color: #1a0000;
 	background-image: url("images/background1.jpg");
 	height:100%;
 	z-index: auto;
-}
+}--*/
 /*-------------------------------------------------Nav--------------------------------------------------------------------*/
 .container-fluid{
 	height:100%;
@@ -41,7 +41,7 @@ body.assign-1{
 }
 
 .dropdown-menu{
-	background-color: transparent;
+	background-color:#1a0000;
 	border-color: transparent;
 }
 a#dropdownMenuLink{
@@ -51,7 +51,8 @@ a#dropdownMenuLink{
  }
  
 .dropdown-item.active{
-	background-color: #E2B659 !important;
+	background-color: #00C9C8 !important;
+	
 	
 }
 
@@ -80,6 +81,7 @@ h1 {
 	font-family: Helvetica, sans-serif;
 
 }
+
 .row #col-a1, #col-a2, #col-a3 h2 {
 	font-family:Helvetica, sans-serif;
 	text-align: center;
