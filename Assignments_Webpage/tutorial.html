@@ -10,9 +10,9 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link type="text/css" rel="stylesheet" href="./style.css" />
-<title>Assignment 1</title>
+<title>Tutorials</title>
 </head>
-<body class="assign-1">
+<body>
 <div class="imagecover"></div>
 <div class="container-fluid">
   
@@ -28,21 +28,23 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link" href="index.html" >Home </a>
-      <a class="nav-item nav-link" href="tutorial.html" id="tutorial">Tutorials</a>
 
+      <a class="nav-item nav-link active" href="tutorial.html" id="active"><b>Tutorials</b><span class="sr-only">(current)</span></a>
       <div class="dropdown show" id="assignments">
         <a class="btn btn-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Assignments</a>
       
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" id="hoverlink" href="assign1.html" ><i class="far fa-file-alt"></i> <b>Assignment 1</b></a>
+          <a class="dropdown-item" id="hoverlink" href="assign1.html"><i class="far fa-file-alt"></i> Assignment 1</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" id="hoverlink" href="assign2.html"><i class="far fa-file-alt"></i> Assignment 2</a>
           <div class="dropdown-divider"></div>
-      
+ 
+          
         </div>
+
+      
       </div>
 
-    
 
 
   
@@ -56,59 +58,40 @@
 
 	<main>
 		<div class="row">
-			<div class="col-sm-2 col-md-3 col-lg-4" id="col-a1">
-              <h2> Values and Types</h2>
-              <section>
-                  <p>IsNaN</p>
-                  <br>
-                  <p>It is the asking of "Is Not A Number" which is automatically true on return unless stated false.</p>
-                  <p>So for example one can not divide zero by zero since it becomes NaN.</p>
-                  <br>
-                  <p>Yet in the case of examples:</p>
-                  <br>
-                  <p>isNaN(5): Is 5 not a 5 so false<br>isNaN('a'):True since 'a' is not a number<br>isNaN(null)it will be false since it starts at 0.<br>
-                  </p>
-            </section>
-                
+			<div class="col-sm-4 col-md-5" id="col-a1">
+                <iframe width="400" height="315" src="https://www.youtube.com/embed/oq8aQRUV5aI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 			
-			<div class="col-sm-2 col-md-3 col-lg-4" id="col-a2">
-                <h2> Unary Operators</h2>
-                <section>
-                  <br>
-                    <p>Plus - Minus</p>
-                    <br>
-                    <p>The plus helps to change the string of numbers, booleans, and null to numbers. It must be an arthmetic type, else it will result in an error.</p>
-                    <p>The minus is the exact same except it is producing the negative of the operator. </p>
-                    
-                    <p>So it will look something like this: "int x = -20; // x is -20 int y = +x; // y is -20"</p>
-
-                    <br>
-                    <p>Delete</p>
-                    <br>
-                    <p>It will return the boolean value if the property is properly deleted or it simply is returned. It wont work with variables since it returns boolean values, and it will not work with functions.</p>
-                   
-                 </section>
-
-                
-			</div>
+			<div class="col-sm-4 col-md-3 " id="col-a2">
+               <section><h2>Assignment One Overview</h2>
+                <p>This is based on values and types, urnary operators, and hoisting.</p>
+            </section> 
+            </div>
 				
-			<div class="col-sm-2 col-md-3 col-lg-4" id="col-a3">
-                <h2> Hoisting</h2>
-                <section>
-                  <br>
-                    <p>It is when the logical processing gets reversed. So what is at the bottom goes ot the top.</p>
-                    <br>
-                    <p>So something like this: <br>x= 5<br>x<br>var x;<br> Which then calls the 5 from up top as it is declared from the bottom.</p>
-                </section>
-             </div>
+			<div class="col-sm-4 col-md-4 " id="col-a3">
+      </div>
       
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-md-5 " id="col-a1">
+            <iframe width="400" height="315" src="https://www.youtube.com/embed/J9G46MtYQdQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+        
+        <div class="col-sm-4 col-md-3 " id="col-a2">
+           <section><h2>Assignment Two Overview</h2>
+            <p>This is based on Functions, Scope, Optional Arguments, and Rest Parameters.</p>
+        </section> 
+        </div>
+            
+        <div class="col-sm-4 col-md-4 " id="col-a3">
+  </div>
+  
+</div>
     
 	</main>
 
 		<footer>
-      <div class="rowfooter">	
+		<div class="rowfooter">	
 				<div class="col-med-12 fixed-bottom" id="foot"><p>CB | <a class="btn" href="https://www.twitch.tv/"><i class="fab fa-twitch"></i></a</i></a> <a class="btn" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> <a class="btn" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a> <a class="btn" href="https://twitter.com/login"><i class="fab fa-twitter"></i></a>| &copy; 2020 </p></div> 
 		</div>
     </footer>
