@@ -1,9 +1,9 @@
 /*--------------------------------------------Body-Images-------------------------------------------------------------------------*/
-body {
+html,body {
 	background-color: #1a0000;
 	background-image: url("images/background.jpg");
 	height:100%;
-	z-index: auto;
+	z-index: -1;
 }
 /*---body.assign-1{
 	background-color: #1a0000;
@@ -22,7 +22,7 @@ body {
 	opacity: 30%;
 	position: absolute;
 	background-size: cover;
-	z-index: 1;
+	z-index: 0;
 
 }
 #bar {
@@ -127,15 +127,24 @@ h1 {
 }
 .row #col-a1 #articlet{ /*--for the column styles on assign2--*/
 	border-right-style:solid;
+	border-left-style:solid;
 }
 .row #col-a1 #articled{ /*--for the column styles on assign2--*/
 	border-right-style:solid;
+	border-left-style:solid;
 	
 }
+
 .row #col-a1 hr {
 	background-color:#E2B659;
 }
+.row #col-a2 hr {
+	background-color:#E2B659;
+}
 
+.row #col-a1c{
+	
+}
 /*---------------------------------------------Assign1-Columns------------------------------------------------------------------------*/
 
 
@@ -143,13 +152,6 @@ h1 {
 	color:#E2B659;
 	text-shadow: 1px 3px 7px rgba(0, 0, 0, 1);
 }
-
-
-
-
-
-
-
 
 
 
@@ -179,20 +181,19 @@ a:visited {
 
 /*-----------------------------------------Footer----------------------------------------------------------------------------*/
 .rowfooter {
-	position:fixed;
+
 	text-align:center;
 	color:#BFFCF9;
 	font-family: cursive;
-	z-index: 2;
+
 }
 
 #foot{
 	background-color: #000000;
 	opacity:.8;	
-	height:4%;
-	margin-left:20px;
-	margin-right:20px;
-	position: fixed;
+	height: 50px;
+	left: 0;
+	right: 0;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------*/
