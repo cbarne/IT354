@@ -27,7 +27,8 @@
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link" href="index.html" ><b>Home </b></a>
+      <a class="nav-item nav-link" href="index.html" >Home</a>
+      <a class="nav-item nav-link" href="tutorial.html" id="tutorial">Tutorials</a>
 
       <div class="dropdown show" id="assignments">
         <a class="btn btn-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Assignments</a>
@@ -35,7 +36,7 @@
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
           <a class="dropdown-item" id="hoverlink" href="assign1.html" ><i class="far fa-file-alt"></i> Assignment 1</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item active" id="hoverlinkactive" href="assign2.html"><i class="far fa-file-alt"></i> Assignment 2<span class="sr-only">(current)</span></a>
+          <a class="dropdown-item" id="hoverlink" href="assign2.html"><i class="far fa-file-alt"></i> <b>Assignment 2</b></a>
           <div class="dropdown-divider"></div>
       
         </div>
@@ -56,53 +57,73 @@
 	<main>
 		<div class="row">
 			<div class="col-sm-2 col-md-3 col-lg-4" id="col-a1">
-              <h2> Values and Types</h2>
+              <h2>Functions</h2>
               <section>
-                  <p>IsNaN</p>
-                  <br>
-                  <p>It is the asking of "Is Not A Number" which is automatically true on return unless stated false.</p>
-                  <p>So for example one can not divide zero by zero since it becomes NaN.</p>
-                  <br>
-                  <p>Yet in the case of examples:</p>
-                  <br>
-                  <p>isNaN(5): Is 5 not a 5 so false<br>isNaN('a'):True since 'a' is not a number<br>isNaN(null)it will be false since it starts at 0.<br>
-                  </p>
+                <br>
+                <h3>Named Functions</h3>
+                <br>
+                <p>Named functions are movable functions compared to its expressions.</p>
+                <br>
+                <h3>Function Expressions</h3>
+                <br>
+                <p>Expressions are unmovable functions that use a constant to define them.</p>
+                <br>
+                <h3>Arrow Functions</h3>
+                <br>
+                <p>Arrow functions are a short way to write a function and are still able to be movable depending on what its used for. It uses the 'fat arrow' as a definer instead of the function declaration.</p>
+                <br>
+                
             </section>
                 
 			</div>
 			
 			<div class="col-sm-2 col-md-3 col-lg-4" id="col-a2">
-                <h2> Unary Operators</h2>
+                <h2>Scope</h2>
                 <section>
                   <br>
-                    <p>Plus - Minus</p>
-                    <br>
-                    <p>The plus helps to change the string of numbers, booleans, and null to numbers. It must be an arthmetic type, else it will result in an error.</p>
-                    <p>The minus is the exact same except it is producing the negative of the operator. </p>
-                    
-                    <p>So it will look something like this: "int x = -20; // x is -20 int y = +x; // y is -20"</p>
-
-                    <br>
-                    <p>Delete</p>
-                    <br>
-                    <p>It will return the boolean value if the property is properly deleted or it simply is returned. It wont work with variables since it returns boolean values, and it will not work with functions.</p>
-                   
+                  <h3>Normal Scope</h3>
+                  <p>It is when one decides they are looking at the specific overview of a certain field of the project itself. So it could deal with names, a login feature, or a simple nav bar for examples of some different scope outlooks.</p>
+                  <br>
+                  <h3>Nested Scope</h3>
+                  <p>Similar to a normal scope,but this is inside the normal scope. It targets a very specific function inside. Which can call to the outside but never inside.</p>
+                  <br>
+                  
                  </section>
 
-                 <iframe width="400" height="315" src="https://www.youtube.com/embed/oq8aQRUV5aI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
 			</div>
 				
 			<div class="col-sm-2 col-md-3 col-lg-4" id="col-a3">
-                <h2> Hoisting</h2>
+                <h2>Optional Arguments and Rest Parameters </h2>
                 <section>
                   <br>
-                    <p>It is when the logical processing gets reversed. So what is at the bottom goes ot the top.</p>
-                    <br>
-                    <p>So something like this: <br>x= 5<br>x<br>var x;<br> Which then calls the 5 from up top as it is declared from the bottom.</p>
+                  <h3>Optional Arguments</h3>
+                  <p>An optional argument is one that can have inputted value in a random declared object. Then once it is called at the end; if it does not have the values specified then it will be dropped off of it.<br> *Order does matter when it is called.*</p>
+                  <br>
+                  <h3>Rest Parameters</h3>
+                  <p>They allow the user to get a list and to basically reiterate it unlimitedly for arguments.</p>
+                  <br>
+                
                 </section>
              </div>
       
         </div>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-sm-2 col-md-3 col-lg-4" id="col-a1">
+            <h2 id="articlet">What is ECMAscript</h2>
+            <hr>
+            <h5 id="articled">Defined as a scripting-language specification by ECMA International.</h5>
+          </div>
+          
+          <div class="col-sm-2 col-md-3 col-lg-8" id="col-a2">
+            <article>
+            <p></p>
+            </article>
+                    
+          </div>
+    
     
 	</main>
 

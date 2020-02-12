@@ -41,7 +41,7 @@ body {
 }
 
 .dropdown-menu{
-	background-color:#1a0000;
+	background-color:#000000;
 	border-color: transparent;
 }
 a#dropdownMenuLink{
@@ -82,7 +82,7 @@ h1 {
 
 }
 
-.row #col-a1, #col-a2, #col-a3 h2 {
+.row #col-a1, #col-a2, #col-a3 {
 	font-family:Helvetica, sans-serif;
 	text-align: center;
 
@@ -124,6 +124,16 @@ h1 {
 	background-color:#000000 ;
 	opacity: .8;
 	z-index: 2;
+}
+.row #col-a1 #articlet{ /*--for the column styles on assign2--*/
+	border-right-style:solid;
+}
+.row #col-a1 #articled{ /*--for the column styles on assign2--*/
+	border-right-style:solid;
+	
+}
+.row #col-a1 hr {
+	background-color:#E2B659;
 }
 
 /*---------------------------------------------Assign1-Columns------------------------------------------------------------------------*/
