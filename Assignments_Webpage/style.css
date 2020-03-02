@@ -247,72 +247,6 @@ a:visited {
 	
 	
 }
-/*---------------------------------------------------------------------------------------------------------------------*/
-@media screen and (max-width: 980px) {
-
-	body {
-		
-		background-image: url("images/background.jpg");
-		margin:0px;
-	}
-
-	
-	#bar {
-		background-color: #000000;
-		opacity:.8;
-		z-index: 4;
-		width: 95%;
-		position:fixed;
-	}
-	#col-2 #tank{
-		z-index: auto;
-		background-color: #000000;
-	}
-
-	#navbarNavAltMarkup{
-		position:absolute;
-		left:20%;
-		z-index: 4;
-	}
-	
-	
-	#col-2 img{
-		position: fixed;
-		top:50%;
-		left:1%;
-		z-index: -1;
-		width: auto;
-		
-	}
-	#col-2 p{
-		z-index: 1;
-		top:50%;
-		left:1%;
-		position: fixed;
-
-	}
-	.row #col-1, #col-2, #col-3{
-		display: inline-block;
-		margin-top: 10px;
-		width:50%;
-		position: fixed;
-		
-	}
-
-	.row #col-a1, #col-a2, #col-a3{
-		display: inline-block;
-		margin-top: 70px;
-		width:100%;
-		margin-left:50px;
-	}
-
-	.row #col-1{
-		top:10%;
-		z-index: 2;
-		
-	}
-	
-}
 
 /*---------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 740px) {
@@ -323,10 +257,11 @@ a:visited {
 	}
 	#navbarNavAltMarkup{
 		position: fixed;
+		top:20px;
 		left:60%;
 		
 	}
-	#col-2 h1{
+	#col-2 h2{
 		margin-top:100px;
 	}
 	.navbar-toggler-icon{
