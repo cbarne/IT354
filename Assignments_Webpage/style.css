@@ -2,7 +2,7 @@
 html,body {
 	background-color: #1a0000;
 	background-image: url("images/background.jpg");
-	height:200%;
+	height:150%;
 	z-index: -1;
 }
 /*---body.assign-1{
@@ -29,6 +29,9 @@ html,body {
 	background-color: #000000;
 	opacity:.8;
 	z-index: 4;
+	margin:0;
+	padding:0;
+	width:100%;
 }
 
 #navbarNavAltMarkup{
@@ -146,7 +149,7 @@ h1 {
 		font-family: sans-Serif;
 		background-color:#000000 ;
 		opacity: .8;
-		z-index: 2;
+		z-index: 1;
 	
 }
 .row #col3{
@@ -312,7 +315,7 @@ a:visited {
 }
 
 /*---------------------------------------------------------------------------------------------------------------------*/
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 740px) {
 	#bar {
 	
 		width: 92%;
@@ -320,7 +323,48 @@ a:visited {
 	}
 	#navbarNavAltMarkup{
 		position: fixed;
-		left:80%
+		left:60%;
+		
+	}
+	#col-2 h1{
+		margin-top:100px;
+	}
+	.navbar-toggler-icon{
+		color: #BFFCF9;
+	}
+	.navbar-nav {
+		text-align: center;
+		background-color: #000000;
+	}
+
+
+	a#dropdownMenuLink{
+		margin:0;
+		padding:0;
+	 }
+	
+	 .row #col2{
+		top:100px;
+		margin-right:80%;
+		
+	 }
+	 
+	 .row #col-a1 {
+		margin-left:0px;
+		position: relative;
+	 }
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 360px) {
+	#bar {
+		width: 100%;
+		position: relative;
+	}
+	#navbarNavAltMarkup{
+		position: fixed;
+		left:80%;
 		
 	}
 
@@ -343,8 +387,16 @@ a:visited {
 		padding:0;
 	 }
 	
-	 
+	 .row #col2{
+		top:100px;
+		margin-right:40px;
+		
+	 }
+	 .row #col3 #tank{
+		top:200px;
+		height:30%;
+		margin-right:40px;
+		width: 20%;
+	 }
 }
 
-
-/*---------------------------------------------------------------------------------------------------------------------*/
