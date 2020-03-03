@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link type="text/css" rel="stylesheet" href="./style.css" />
-<title>Assignment 2</title>
+<title>Assignment 3</title>
 </head>
 <body class="assign-1">
 <div class="imagecover"></div>
@@ -40,6 +40,7 @@
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" id="hoverlink" href="assign3.html"><i class="far fa-file-alt"></i> <b>Assignment 3</b></a>
           <div class="dropdown-divider"></div>
+      
         </div>
       </div>
 
@@ -58,52 +59,63 @@
 	<main>
 		<div class="row">
 			<div class="col-sm-2 col-md-3 col-lg-4" id="col-a1">
-              <h2>Functions</h2>
+              <h2>Objects</h2>
               <section>
                 <br>
-                <h3>Named Functions</h3>
+                <h3>Object Creation</h3>
                 <br>
-                <p>Named functions are movable functions compared to its expressions.</p>
+                <p>They are needed for any kind of Object Language. There are a few different ways to work with objects. All objects in JavaScript are directly from 'Object'.</p>
                 <br>
-                <h3>Function Expressions</h3>
+                <h3>Object Creation - Classes</h3>
                 <br>
-                <p>Expressions are unmovable functions that use a constant to define them.</p>
-                <br>
-                <h3>Arrow Functions</h3>
-                <br>
-                <p>Arrow functions are a short way to write a function and are still able to be movable depending on what its used for. It uses the 'fat arrow' as a definer instead of the function declaration.</p>
-                <br>
+                <p>Classes are used differently compared to normal objects and have a specific function to them.</p>
+                
                 
             </section>
                 
 			</div>
 			
 			<div class="col-sm-2 col-md-3 col-lg-4" id="col-a2">
-                <h2>Scope</h2>
+                <h2>Object Code Creations</h2>
                 <section>
                   <br>
-                  <h3>Normal Scope</h3>
-                  <p>It is when one decides they are looking at the specific overview of a certain field of the project itself. So it could deal with names, a login feature, or a simple nav bar for examples of some different scope outlooks.</p>
+                  <h3>Properties and Values Setting</h3>
                   <br>
-                  <h3>Nested Scope</h3>
-                  <p>Similar to a normal scope,but this is inside the normal scope. It targets a very specific function inside. Which can call to the outside but never inside.</p>
+                  <p>In this example it is showing how to set the propertys of the object itself.</p>
                   <br>
-                  
+                  <p>const hobby = new Object()<br>
+                    hobby.name = "Aquascape"<br>
+                    hobby.type = "Aquatic Plant and Fish Keeping"<br>
+                    hobby.price = "Stupid Expensive"<br>
+                    hobby.fishcount = 2</p>
+                  <br>
+                  <h3>Literal Object</h3>
+                  <br>
+                  <p>const hobby1 = { name: "Aquascape",
+                    type:"Aquatic Plant and Fish Keeping",
+                    price:"Stupid Expensive", fishcount:2
+                    }
+                    console.log(hobby1, "this is the second example")</p>
+                  <h3>Object Class Creation</h3>
+                  <br>
+                  <p>class myHobby (name, type, price) { 
+                    <br>this.name = name 
+                    <br> this.type = type
+                    <br> this.price = price
+          }<br>
+          <br> const hobby = new myHobby<br>("Aquascape", "Aquatic Plant and Fish Keeping", "Stupid Expensive")
+          <br>console.log(hobby)</p>
+                    
                  </section>
 
                 
 			</div>
 				
 			<div class="col-sm-2 col-md-3 col-lg-4" id="col-a3">
-                <h2>Optional Arguments and Rest Parameters </h2>
+                <h2>Screenshots Of Examples </h2>
                 <section>
-                  <br>
-                  <h3>Optional Arguments</h3>
-                  <p>An optional argument is one that can have inputted value in a random declared object. Then once it is called at the end; if it does not have the values specified then it will be dropped off of it.<br> *Order does matter when it is called.*</p>
-                  <br>
-                  <h3>Rest Parameters</h3>
-                  <p>They allow the user to get a list and to basically reiterate it unlimitedly for arguments.</p>
-                  <br>
+                  <figure><img id="tank" src="images/codeex1ass3.png" alt="404 Error" height="120" width="400"> </figure>
+                  <figure><img id="tank" src="images/codeex2ass3.png" alt="404 Error" height="120" width="400"> </figure>
                 
                 </section>
              </div>
@@ -114,55 +126,65 @@
         <div class="row">
           <div class="col-sm-2 col-md-3 col-lg-4" id="col-a1">
             <hr>
-            <h2 id="articlet">What is ECMAscript</h2>
+            <h2 id="articlet">Responsive Website Tutorial Essay</h2>
             <hr>
-            <h5 id="articled">Defined as a scripting-language specification by ECMA International.</h5>
-            <hr>
+           
           </div>
           
           <div class="col-sm-2 col-md-3 col-lg-8" id="col-a2">
             <article>
               <hr>
-            <p>Its first initial release was all the way back in 1997. It was designed by a man named Brendan Eich. It was created to help standardize the use of Javascript. Which has lead Javascript to become one of the most used implementers of the scripting language.</p>
-            <br>
-            <p>It is used for client side scripting and it is used in Node.js quite commonly. Since it is a scripting language, that means that it handles the fundemental actions that a user will input. Similar to a video game character needing to move.</p>
-            <br>
-            <p>Javascript uses the scripting language as a basis for how it runs its own guidelines. It is like saying you have a constitution to base your guidelines off of. 
-            Unless you're a <a  href="#" data-toggle="modal" data-target="#exampleModalCenter">pirate.</a>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="images/guidelines.gif">
-      </div>
-    </div>
-  </div>
-</div>
-<!--I put this in for a solid laugh after reading about it and immediately thinking of this haha-->
-Since both Javascript aims to be very compatible, it also provides additional features not described in the guidelines. Those are posted in each new version update for more information.
-</p>
-
-          </article>
-                    
+            <p></p>
+              <hr>
+          </article>     
           </div>
+          
+          
+            <div class="col-sm-2 col-md-3 col-lg-4" id="col-a1">
+              <hr>
+              <h2 id="articlet">Usability Mistakes</h2>
+              <hr>
+            
+            </div>
+            
+            <div class="col-sm-2 col-md-3 col-lg-8" id="col-a2">
+              <article>
+                <hr>
+              <p></p>
+                <hr>
+            </article>     
+            </div>
+          
+
+         
+            <div class="col-sm-2 col-md-3 col-lg-4" id="col-a1">
+              <hr>
+              <h2 id="articlet">Principale of Website Usability</h2>
+              <hr>
+            
+            </div>
+            
+            <div class="col-sm-2 col-md-3 col-lg-8" id="col-a2">
+              <article>
+                <hr>
+              <p></p>
+                <hr>
+            </article>     
+            </div>
+          </div>
+
+
+
           <div class="row">
             <div class="col-sm-2 col-md-3 col-lg-12" id="col-a1">
               <hr>
               <h2 id="articlct">Sources Cited</h2>
               <hr>
-              <p>“ECMAScript.” Wikipedia, Wikimedia Foundation, 12 Feb. 2020, en.wikipedia.org/wiki/ECMAScript.
-                <br>
-                freeCodeCamp.org. “What's the Difference between JavaScript and ECMAScript?” FreeCodeCamp.org, FreeCodeCamp.org, 25 Aug. 2017, www.freecodecamp.org/news/whats-the-difference-between-javascript-and-ecmascript-cba48c73a2b5/.</p>
+              <p></p>
             </div>
-          </div>
-            
+        </div>
+      
+      
           
     
     
