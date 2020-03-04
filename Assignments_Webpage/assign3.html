@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<link rel="shortcut icon" type="image/png" href="https://static-cdn.jtvnw.net/emoticons/v1/1576962/3.0" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link type="text/css" rel="stylesheet" href="./style.css" />
+<title>Assignment 3</title>
+</head>
+<body class="assign-1">
+<div class="imagecover"></div>
+<div class="container-fluid">
+  
+<nav class="navbar navbar-expand-xl navbar-expand-sm" id="bar">
+    <a class="navbar-brand "><h1>| IT354 |</h1></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <i class="fa fa-bars"></i>
+      </span>
+    </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="index.html" >Home</a>
+      <a class="nav-item nav-link" href="tutorial.html" id="tutorial">Tutorials</a>
+
+      <div class="dropdown show" id="assignments">
+        <a class="btn btn-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Assignments</a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" id="hoverlink" href="assign1.html" ><i class="far fa-file-alt"></i> Assignment 1</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="hoverlink" href="assign2.html"><i class="far fa-file-alt"></i> <b>Assignment 2</b></a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="hoverlink" href="assign3.html"><i class="far fa-file-alt"></i> <b>Assignment 3</b></a>
+          <div class="dropdown-divider"></div>
+      
+        </div>
+      </div>
+
+    
+
+
+  
+      
+     
+    </div>
+  </div>
+
+
+</nav>
+
+	<main>
+		<div class="row">
+			<div class="col-sm-2 col-md-3 col-lg-4" id="col-a1">
+              <h2>Objects</h2>
+              <section>
+                <br>
+                <h3>Object Creation</h3>
+                <br>
+                <p>They are needed for any kind of Object Language. There are a few different ways to work with objects. All objects in JavaScript are directly from 'Object'.</p>
+                <br>
+                <h3>Object Creation - Classes</h3>
+                <br>
+                <p>Classes are used differently compared to normal objects and have a specific function to them.</p>
+                
+                
+            </section>
+                
+			</div>
+			
+			<div class="col-sm-2 col-md-3 col-lg-4" id="col-a2">
+                <h2>Object Code Creations</h2>
+                <section>
+                  <br>
+                  <h3>Properties and Values Setting</h3>
+                  <br>
+                  <p>In this example it is showing how to set the propertys of the object itself.</p>
+                  <br>
+                  <p>const hobby = new Object()<br>
+                    hobby.name = "Aquascape"<br>
+                    hobby.type = "Aquatic Plant and Fish Keeping"<br>
+                    hobby.price = "Stupid Expensive"<br>
+                    hobby.fishcount = 2</p>
+                  <br>
+                  <h3>Literal Object</h3>
+                  <br>
+                  <p>const hobby1 = { name: "Aquascape",
+                    type:"Aquatic Plant and Fish Keeping",
+                    price:"Stupid Expensive", fishcount:2
+                    }
+                    console.log(hobby1, "this is the second example")</p>
+                  <h3>Object Class Creation</h3>
+                  <br>
+                  <p>class myHobby (name, type, price) { 
+                    <br>this.name = name 
+                    <br> this.type = type
+                    <br> this.price = price
+          }<br>
+          <br> const hobby = new myHobby<br>("Aquascape", "Aquatic Plant and Fish Keeping", "Stupid Expensive")
+          <br>console.log(hobby)</p>
+                    
+                 </section>
+
+                
+			</div>
+				
+			<div class="col-sm-2 col-md-3 col-lg-4" id="col-a3">
+                <h2>Screenshots Of Examples </h2>
+                <section>
+                  <figure><img id="tank" src="images/codeex1ass3.png" alt="404 Error" height="120" width="400"> </figure>
+                  <figure><img id="tank" src="images/codeex2ass3.png" alt="404 Error" height="120" width="400"> </figure>
+                
+                </section>
+             </div>
+      
+        </div>
+        <br>
+        <br>
+        <div class="row">
+          
+          <div class="col-sm-2 col-md-3 col-lg-4" id="col-a1">
+            <hr>
+            <h2 id="articlet">Responsive Website Tutorial Essay</h2>
+            <hr>
+           
+          </div>
+          
+          <div class="col-sm-2 col-md-3 col-lg-8" id="col-a2">
+            <article>
+              <hr>
+            <p>I did not know about the website that he used for simple tutorials. It is nice to know there is short tutorials like that. Also did not know you could auto set the padding
+              or margin to 0 for everything right away. I think it is useful to know that. I did not know flex was actually that useful. It is kind of nice to know that it basically is bootstrap.
+              The simple circle effect could be extremely useful when deciding how I want to use the parrallax effect. The keyframe animation was also a nice touch to see. It may be useful to see that
+              used in my final project as a bubble animation.
+              <br>
+              Overall I would say it was an extremely informative video showcasing alot of new ideas that I did not know existed. Let alone was aware that simplicity can be that easy.
+              It also left an impression that I need to learn more than I do now about current standards with design.
+            </p>
+              <hr>
+          </article>     
+          </div>
+          
+          
+            <div class="col-sm-2 col-md-3 col-lg-4" id="col-a1">
+              <hr>
+              <h2 id="articlet">Usability Mistakes</h2>
+              <hr>
+            </div>
+            
+            <div class="col-sm-2 col-md-3 col-lg-8" id="col-a2">
+              <article>
+                <h3>Tiny Clickable Areas</h3>
+                <hr>
+              <p>Content that is to small to click is not very accessible for users. The hand movement for users is not 100% accurate and some users have issues with seeing small things.</p>
+                <hr>
+                <h3>Page Titles</h3>
+                <hr>
+              <p>Page titles help determine what the user will find once the webpage has been search on engines like Google. If it is not a descriptive enough title and it is too generic. Users may never come across
+                the webpage like was intended.
+              </p>
+                <hr>
+                <h3>Content Scanning</h3>
+                <hr>
+              <p>First rule of web design is does it hurt to look at, is the layout confusing, and is this pleasing to look at?
+                If the page displays items all over the user will not be able to understand how we have it set up. The user reads from top to bottom and the gaze generally zig zags. So focus points are good to have.
+              </p>
+                <hr>
+            </article>     
+            </div>
+          
+
+         
+            <div class="col-sm-2 col-md-3 col-lg-4" id="col-a1">
+              <hr>
+              <h2 id="articlet">Principale of Website Usability</h2>
+              <hr>
+            
+            </div>
+            
+            <div class="col-sm-2 col-md-3 col-lg-8" id="col-a2">
+              <article>
+                <hr>
+              <p>2 Second Rule: This rule pertains to the users attention span. If it will not load in two second, than the experience is garbage. So try to keep any type of application launch time under that.</p>
+              <p>3-Click Rule: The user should be able to access most if not all of the information the site needs to offer within three clicks. It shows that there is clear navigation and it shows there is not a mass of clutter.</p>          
+              <p>Inverted Pyramid: The summary is presented at the beginning of the article rather then the end. Since most users have the attention span of a gerbal, it allows for the meatier substance of information to be at the beginning.</p>
+              <p>Don't Use Pop-Ups: It interupts the viewer from what they are doing and potentially nags them to want to leave.</p>
+              <p>Don't Have Dead Links: The use of dead links hinders the user from what was meant to be, but never was. It makes them useless to even put in.</p>
+              <p>Have Only One Animation Per Page: It can distract the user from the content that is on the page. Making them just as ADHD as kid off his meds trying to study.</p>
+              <p>Make Contact Easy: Communication is key. It can lead to missed opportunities, no trust, or even worse the user won't return due to lack of support.</p>
+              <p>Make Links Open on the Same Page: User has control and is like a customer. You let them decide what they want to do and not do it for them.</p>
+              <p>Ad Banner Blindness: Nobody likes ad's. That includes banner ad's. They are noticed by people, but who really clicks on them nowadays? Nobody, that's who.</p>
+              <p>Eye Tracking: It is how the user navigates a webpage just by looking at it. If it is difficult to follow the user will have a bad experience.</p>
+              <hr>
+            </article>     
+            </div>
+
+            <div class="col-sm-2 col-md-3 col-lg-4" id="col-a1">
+              <hr>
+              <h2 id="articlet">5 Key Principles of Good Usability</h2>
+              <hr>
+            </div>
+            
+            <div class="col-sm-2 col-md-3 col-lg-8" id="col-a2">
+              <article>
+             <br>
+               <h3>Avaliability and Accessibility</h3>
+               <hr>
+             <p>If it does not work, it is garbage. Without users being able to utilize everything, than they become frustated and the site becomes unavaliable. Server uptime is a major player.
+               It helps incoporate the avaliability that your website is up for. Dead links are a big no no once again. Mobile responsiveness is key since most users are on phones instead of pc's 
+               when accessing the webpage.
+             </p>
+               <hr>
+               <h3>Clarity</h3>
+               <hr>
+             <p>Do not distract the users! Simplicity is key. Focus on what is important and familiar to people. Consistency helps with the relative use of clarity as it eases the users mind.
+               Give feedback to every action. Remember Newtons 3rd Law? Same thing  is needed for the user to understand what they are doing is what is meant to happen.
+             </p>
+               <hr>
+               <h3>Learnability</h3>
+               <hr>
+             <p>Making something that has ease of use or can be learned easily. Design has been around for a long time, and people recognize patterns. So with the web, everyone recognizes
+               styles to some extent. Which helps with conceptual design. Making a tutorial unneccesary. Clean and easy to navigate allows for quick access and accessibility as well.
+             </p>
+               <hr>
+               <h3>Credibility</h3>
+               <hr>
+             <p>Noone clicks those links that has a weird 2000's era bubble. They are sketchy and screams virus, but sometimes you gotta trust those uncredible sources for things. Most users need
+               to know that you are the real deal and not some virus page. The about us page allows for contact and details for trustworthyness of a site.
+             </p>
+               <hr>
+               <h3>Relevancy</h3>
+               <hr>
+             <p>You need to be relevant. Stay up to date. Know who the target audience is. If you don't know why people are visiting your website, you don't know your audience.
+               Pick a target audience and let that define the web experience for your user.
+             </p>
+               <hr>
+              
+            </article>     
+            </div>
+
+
+          </div>
+
+
+
+      
+      
+      
+          
+    
+    
+	</main>
+
+		<footer>
+      <div class="rowfooter">	
+				<div class="col-med-12 fixed-bottom" id="foot"><p><a href="contact.html">CB</a> | <a class="btn" href="https://www.twitch.tv/"><i class="fab fa-twitch"></i></a</i></a> <a class="btn" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> <a class="btn" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a> <a class="btn" href="https://twitter.com/login"><i class="fab fa-twitter"></i></a>| &copy; 2020 </p></div> 
+		</div>
+    </footer>
+	</div>
+</div>
+</div>
+</body>
+</html>
