@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<link rel="shortcut icon" type="image/png" href="https://static-cdn.jtvnw.net/emoticons/v1/1576962/3.0" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link type="text/css" rel="stylesheet" href="./style.css" />
+<title>Assignment 4</title>
+</head>
+<body class="assign-1">
+<div class="imagecover"></div>
+<div class="container-fluid">
+  
+<nav class="navbar navbar-expand-xl navbar-expand-sm" id="bar">
+    <a class="navbar-brand "><h1>| IT354 |</h1></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <i class="fa fa-bars"></i>
+      </span>
+    </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="index.html" >Home</a>
+      <a class="nav-item nav-link" href="tutorial.html" id="tutorial">Tutorials</a>
+
+      <div class="dropdown show" id="assignments">
+        <a class="btn btn-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Assignments</a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" id="hoverlink" href="assign1.html" ><i class="far fa-file-alt"></i> Values, Operators, Hoisting</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="hoverlink" href="assign2.html"><i class="far fa-file-alt"></i> Functions, Scope, Arguements</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="hoverlink" href="assign3.html"><i class="far fa-file-alt"></i> Objects</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="hoverlink" href="assign4.html"><i class="far fa-file-alt"></i> <b> Prototypal Inheritance, 'this'</b></a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="hoverlink" href="assign5.html"><i class="far fa-file-alt"></i> Modules, High order Functions, AAM</a>
+          <div class="dropdown-divider"></div>
+      
+        </div>
+      </div>
+
+    
+
+
+  
+      
+     
+    </div>
+  </div>
+
+
+</nav>
+
+	<main>
+		<div class="row">
+			<div class="col-sm-2 col-md-3 col-lg-4" id="col-a1">
+              <h2>Prototypal Inheritance</h2>
+              <section>
+                <br>
+                <h3>Attributes</h3>
+                <br>
+                <p>When setting up your function you need to make sure you have all of your constructor types inside. Using the 'this' keyword and setting it to itself. 
+                </p>
+                <br>
+                <h3>Functions</h3>
+                <br>
+                <p> In the sense of functions, the prototype needs to be defined. Such as <i>Teacher.prototype.greeting = function()</i> would be a fine example. Where the prototype was defined beforehand
+                as an object that was created and now is being called. Once one is ready to run it they simply would do <i>teacher.greeting()</i> like a normal function call.</p>
+                <br>
+                <h3>`this`</h3>
+                <br>
+                <p>It is not affected by prototypes at all. It is always going to be the object before the period. So in the instance of <i>this.name</i> it will always be before it.
+                There are times where a different word is used such as <i>leader.fullname</i> for example.</p>
+                <br>
+                <h3>"Syntactic Sugar"</h3>
+                <br>
+                <p> It just means the class itself will not use the writing property for prototypes. Only reading properties is used.</p>
+                
+                
+            </section>
+                
+			</div>
+			
+			<div class="col-sm-2 col-md-3 col-lg-4" id="col-a2">
+                <h2>`this` Keyword</h2>
+                <section>
+                  <br>
+                  <h3>Window Object</h3>
+                  <p>A window object is a literal representation of an open window in the browser. All global Javascript objects can automatically become members of the window object. 
+                    Since global variables are the properties of the window object and the global functions are the methods to the window object.
+                  </p>
+                  <br>
+                  <h3>Global Object</h3>
+                  <p>As stated before, global objects can automatically become part of a window object. They provide functions, and variables that are avaliable anywhere. Hence the name global.
+                    For the typical browser it is known as window since it can be inside of the window object, but for Node.js it is global.
+                  </p>
+                  
+                    
+                 </section>
+
+                
+			</div>
+				
+
+      
+        </div>
+        <br>
+        <br>
+        <div class="row">
+          
+          <div class="col-sm-2 col-md-3 col-lg-4" id="col-a1">
+            <hr>
+            <h2 id="articlet">MicroServices Vs Monolith</h2>
+            <hr>
+           
+          </div>
+          
+          <div class="col-sm-2 col-md-3 col-lg-8" id="col-a2">
+            <article>
+              <hr>
+            <p>The idea is that Microservices are the cool new thing and are outplaying the old Monolith technology. Since there are lots of difficultys that follow with Monolith.
+              Some of those being, "huge code base, adopting a new technology, scaling, deployment, implementing new changes and others". As it is the traditional way to develop apps
+              there was bound to be a challenger eventually.<br><br>
+              Monolith is the traditional approach at building the single unit. The issue with it being a single unit is if an update must occur, it will affect the whole code stack. Not just
+              one or two things. It does have some positives though which include its debugging and testing capabilities. It becomes simple to deploy since it is just one single unit rather than multiple.
+              However it does face the new technology barriers that have arose. Including the ability to scale. Which also hinders making changes since it is so large.
+              <br><br>
+              However Microservices are not perfect either. While it looks pretty on the outside, does it do the job? It starts by breaking the application down into smaller units that are all independant 
+              rather then one big one. So deployables become quick and simple and are able to communicate with each other through the use of API's. Which helps with the ease of understanding. Creating a better ability for scaling to occur with still being 
+              independant. However it is very complex and the testing of such a system is very hard to do.
+              <br><br>
+              Which one is better you ask? Well both actually. Just depends on what kind of business you plan to do and what you wish to achieve.
+            </p>
+              <hr>
+
+             </article>     
+          </div>
+          <div class="row">
+            <div class="col-sm-2 col-md-3 col-lg-12" id="col-a1">
+              <hr>
+              <h2 id="articlct">Sources Cited</h2>
+              <hr>
+              <p> Gnatyk, Romana. “Microservices vs Monolith: Which Architecture Is the Best Choice for Your Business?” Microservices vs Monolith: Which Architecture Is the Best Choice?, N-IX, 3 Oct. 2018, www.n-ix.com/microservices-vs-monolith-which-architecture-best-choice-your-business/.</p></div>
+          </div>
+     
+          </div>
+
+
+
+      
+      
+      
+          
+    
+    
+	</main>
+
+		<footer>
+      <div class="rowfooter">	
+				<div class="col-med-12 bottom" id="foot"><p><a href="contact.html">CB</a> | <a class="btn" href="https://www.twitch.tv/"><i class="fab fa-twitch"></i></a</i></a> <a class="btn" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> <a class="btn" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a> <a class="btn" href="https://twitter.com/login"><i class="fab fa-twitter"></i></a>| &copy; 2020 </p></div> 
+		</div>
+    </footer>
+	</div>
+</div>
+</div>
+</body>
+</html>
