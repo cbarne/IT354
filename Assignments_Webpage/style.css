@@ -12,18 +12,18 @@ html,body {
 #42413D - Carbon
 #B2AFAC - Ash
 #959492 - dust
+
 */
 
 /*-------------------------------------------------Nav--------------------------------------------------------------------*/
 .container-fluid{
 	height:100%;
-	
+	padding:0px;
 	background-color: #42413D;
 }
 
 #bar {
 	background-color: #B2AFAC;
-	opacity:.8;
 	z-index: 4;
 	margin:0;
 	padding:0;
@@ -267,7 +267,8 @@ a:visited {
 		position:fixed;
 	}
 	#navbarNavAltMarkup{
-		position: fabsolute;
+		position: absolute;
+		margin-top:50px;
 		left:20%;
 		
 	}
@@ -316,7 +317,10 @@ a:visited {
 		left:80%;
 		
 	}
-
+	.navbar-brand{
+		margin:0;
+		margin:0;
+	}
 	.navbar-toggler-icon{
 		color: #42413D;
 	}
@@ -349,3 +353,4 @@ a:visited {
 	 }
 
 }
+
