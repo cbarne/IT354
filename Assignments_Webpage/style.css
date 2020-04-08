@@ -18,13 +18,13 @@ html,body {
 /*-------------------------------------------------Nav--------------------------------------------------------------------*/
 .container-fluid{
 	height:100%;
-	
+
+	padding:0px;
 	background-color: #42413D;
 }
 
 #bar {
 	background-color: #B2AFAC;
-	opacity:.8;
 	z-index: 4;
 	margin:0;
 	padding:0;
@@ -87,6 +87,7 @@ h1 {
 	text-align: center;
 	color:#FFCE2B;
 	font-size:18px;
+	margin-right:0;
 	margin-top: 50px;
 	text-shadow: 1px 3px 7px rgba(0, 0, 0, 1);
 	
@@ -268,7 +269,9 @@ a:visited {
 		position:fixed;
 	}
 	#navbarNavAltMarkup{
-		position: fabsolute;
+
+		position: absolute;
+		margin-top:50px;
 		left:20%;
 		
 	}
@@ -310,14 +313,17 @@ a:visited {
 @media screen and (max-width: 360px) {
 	#bar {
 		width: 100%;
-		position: relative;
+		position:fixed;
 	}
 	#navbarNavAltMarkup{
 		position: fixed;
 		left:80%;
 		
 	}
-
+	.navbar-brand{
+		margin:0;
+		margin:0;
+	}
 	.navbar-toggler-icon{
 		color: #42413D;
 	}
