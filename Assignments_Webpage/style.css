@@ -86,6 +86,7 @@ h1 {
 	text-align: center;
 	color:#FFCE2B;
 	font-size:18px;
+	margin-right:0;
 	margin-top: 50px;
 	text-shadow: 1px 3px 7px rgba(0, 0, 0, 1);
 	
@@ -310,7 +311,7 @@ a:visited {
 @media screen and (max-width: 360px) {
 	#bar {
 		width: 100%;
-		position: relative;
+		position:fixed;
 	}
 	#navbarNavAltMarkup{
 		position: fixed;
