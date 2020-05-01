@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>AquaApp</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+  <script>
+    // firebase configuration
+    var config = {
+    apiKey: "AIzaSyDUEU0Adpa53W6KuOldiEL5aROPLrBqeGU",
+    authDomain: "web-app-it354.firebaseapp.com",
+    databaseURL: "https://web-app-it354.firebaseio.com",
+    projectId: "web-app-it354",
+    storageBucket: "web-app-it354.appspot.com",
+    messagingSenderId: "89555943530",
+    appId: "1:89555943530:web:a381dc228f251650e84a13"
+  };
+  firebase.initializeApp(config);
+ 
+  
+firebase.auth().onAuthStateChanged(function (user){
+if(user){
+    var email = user.email;
+    user = firebase.auth().currentUser;
+}
+
+
+});
+
+
+function login (){
+
+//get elements
+const txtemail = document.getElementById('txtemail').value;
+const txtpass = document.getElementById('txtpass').value;
+firebase.auth().signInWithEmailAndPassword(txtemail,txtpass).catch(function(error) {
+    const promise = auth.createUserWithEmailAndPassword(txtemail,txtpass);
+    promise.catch (e => console.log(e.message));
+  });
+}
+  </script>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <div class="site-logo"><a href="index.html">Aquaapp</a></div>
+          <div class="ml-auto">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="#home-section" class="nav-link">Home</a></li>
+                <li><a href="#appreciate-section" class="nav-link">Appreciation</a></li>
+                <li><a href="#record-section" class="nav-link">Records</a></li>
+                <li><a href="#patience-section" class="nav-link">Patience</a></li>
+                <li><a href="#learning-section" class="nav-link">Educate</a></li>
+                <li><a href="#balance-section" class="nav-link">Balance</a></li>
+                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                <li><input id="txtemail" type="email" placeholder="Email">
+                  <input id="txtpass" type="password" placeholder="Password">
+                  <button onclick="login()" id="btnlogin" class="btn btn-action"> Login</button></li>
+              </ul>
+            </nav>
+            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a>
+          </div>
+
+        </div>
+      </div>
+
+    </header>
+
+    <a id="bgndVideo" class="player"
+      data-property="{videoURL:'https://www.youtube.com/watch?v=769gXWGBv7o',showYTLogo:false, showAnnotations: false, showControls: false, cc_load_policy: false, containment:'#home-section',autoPlay:true, mute:true, startAt:3, stopAt: 22, opacity:1}">
+    </a>
+<!-- credits to insiders video, awesome video btw -->
+    <div class="intro-section" id="home-section" style="background-color: #ccc;">
+      <div class="container">
+
+        <div class="row align-items-center">
+          <div class="col-lg-12 mx-auto text-center" data-aos="fade-up">
+            <h1 class="mb-3">Relax</h1>
+            <p class="lead mx-auto desc mb-5">This hobby is about learning, patience, experiencing failure, and enjoyment. </p>
+            <p class="text-center">
+              <a href="#started-section" class="btn btn-outline-white py-3 px-5">Dive in</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+   <!-- First paragraph area -->
+
+    <div class="site-section" id= "started-section">
+      <div class="container" >
+
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-md-8 section-heading"> 
+            <h2 class="heading mb-3">How to get interested</h2>
+            <ul class="list-styled text-left">
+              <li>Visit Local Aquatic store to window shop a type of fish / invertebrates.</li>
+              <li>Gather inspiration from nature / the web.</li>
+              <li>Study up on tank sizes, nitrate cycle, materials that are tank 'Ok' and the type of filter needed.</li>
+              <li>Begin gathering supplies to start the tank.</li>
+            </ul>
+            <p></p>
+          </div>
+        </div>
+        </div>
+
+      </div>
+    </div>
+<!-- image for parallax -->
+    <div class="bgimg" style="background-image: url('images/bg_2.jpg');"  data-stellar-background-ratio="0.5">
+<!-- parallax wording -->
+      <div class="container" id="appreciate-section">
+        <div class="row align-items-center justify-content-center text-center">
+          <div class="col-md-7">
+            <h2 class="">Appreciation.</h2>
+            <p class="lead mx-auto desc mb-5">Take time out of the day to enjoy the ecosystem one has created. The life thrives off of the work that is put in. It is a balance of nature and harmony.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- records -->
+    <div class="site-section" id="record-section">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-md-8  section-heading">
+            <h2 class="heading mb-3">Record Keeping</h2>
+            <p>It is important to keep record of progress. It does not have to be everyday, every water change, or even every couple of weeks. Just track how far one has come</p>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="class-item d-flex align-items-center">
+         
+              </a>
+
+              <div class="class-item-text">
+                <h2>Day 1</h2>
+                <span>This journey has just begun...<br></span>
+                <label for="subject"></label>
+                <textarea id="subject" name="subject" placeholder="Ph, Am, Ni, Na.." style="height:50px"></textarea>
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                  
+                  <input type="file" name="fileToUpload" id="fileToUpload">
+                  <input type="submit" value="Submit" name="submit">
+              </form>
+              </div>
+            </div>
+
+            <div class="class-item d-flex align-items-center">
+            
+              <div class="class-item-text">
+                
+                <h2>Day 15</h2>
+                <span>Sometimes its ok to be impatient.<br></b></span>
+                <label for="subject"></label>
+                <textarea id="subject" name="subject" placeholder="Ph, Am, Ni, Na.." style="height:50px"></textarea>
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                  
+                  <input type="file" name="fileToUpload" id="fileToUpload">
+                  <input type="submit" value="Submit" name="submit">
+              </div>
+            </div>
+
+          
+          </div>
+          <div class="col-lg-6">
+            <div class="class-item d-flex align-items-center">
+            
+              </a>
+              <div class="class-item-text">
+                
+                <h2>Day 45</h2>
+                <span>Appreciate the achievement.<br></span>
+                <label for="subject"></label>
+                <textarea id="subject" name="subject" placeholder="Ph, Am, Ni, Na.." style="height:50px"></textarea>
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                  
+                  <input type="file" name="fileToUpload" id="fileToUpload">
+                  <input type="submit" value="Submit" name="submit">
+              </div>
+            </div>
+            
+            <div class="class-item d-flex align-items-center">
+           
+              </a>
+              <div class="class-item-text">
+                
+                <h2>Day 90</h2>
+                <span>Find the balance daily.<br></span>
+               
+                <label for="subject"></label>
+                <textarea id="subject" name="subject" placeholder="Ph, Am, Ni, Na.." style="height:50px"></textarea>
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                  
+                  <input type="file" name="fileToUpload" id="fileToUpload">
+                  <input type="submit" value="Submit" name="submit">
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Class marker end -->
+
+    <div class="bgimg" style="background-image: url('images/bg_3.jpg');"  data-stellar-background-ratio="0.5">
+      <div class="container"id="patience-section">
+        <div class="row align-items-center justify-content-center text-center">
+          <div class="col-md-7">
+            <h2 class="">Patience</h2>
+            <p class="lead mx-auto desc mb-5"> The key to an amazing aqautic tank is time. All wounds heal with time, all things grow with time. That includes ones experience. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- next parallax -->
+
+
+<div class="site-section" id="learning-section">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-5" data-aos="fade-up">
+      <div class="col-md-8  section-heading">
+       
+        <h2 class="heading mb-3">Educate One-self</h2>
+        <p>This hobby is not for those unwilling to take the time to learn.<br> Learning is vital to staying healthy and keeping the mind at peace. <br>
+        As one embarks on their journey into aquascaping, it can become a struggle, a toil, a test of mental will power at times. Failure is to be expected, but dont lose hope.
+      Failure is the key to success. Through failure one learns the true lessons.<br> As plants grow, fish thrive; algae grows, fish die. It is a cycle of nature.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-1 mb-4 mb-lg-0 col-md-6 text-center" data-aos="fade-up" data-aos-delay="300">
+<!-- spacer -->
+      </div>
+
+
+      <div class="col-lg-2 mb-4 mb-lg-0 col-md-6 text-center" data-aos="fade-up" data-aos-delay="">
+        <div class="person">
+          <img src="images/pH.png" alt="Image" class="img-fluid">
+          <h3></h3>
+          <p class="position">pH</p>
+          <p>The pH is the test of acidity of water. The neutral zone is a 7.0 for alkalinity. While being less then 7.0 is acidic.</p>
+        </div>
+      </div>
+      <div class="col-lg-2 mb-4 mb-lg-0 col-md-6 text-center" data-aos="fade-up" data-aos-delay="">
+        <div class="person">
+          <img src="images/pH_high.png" alt="Image" class="img-fluid">
+          <h3></h3>
+          <p class="position">pH High</p>
+          <p>Higher ranges are generally used for marine fish & invertebrates. A decent zone is between 8.0 - 8.4 in most cases.</p>
+        </div>
+      </div>
+      <div class="col-lg-2 mb-4 mb-lg-0 col-md-6 text-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="person">
+          <img src="images/ammonia.png" alt="Image" class="img-fluid">
+          <h3></h3>
+          <p class="position">Ammonia</p>
+          <p>Ammonia is the waste released by the fish through their gills,uneaten food, & excrement. It can cause a quick imbalance in a tank. Killing fish & plants alike. </p>
+        </div>
+      </div>
+      <div class="col-lg-2 mb-4 mb-lg-0 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="person">
+          <img src="images/nitrite.png" alt="Image" class="img-fluid">
+          <h3></h3>
+          <p class="position">Nitrite</p>
+          <p>It is produced from the biological filter in the aquarium. It converts ammonia into nitrites into nitrates. By itself it is toxic, & in trace amounts can stress a fish / plant to death.</p>
+        </div>
+      </div>
+      <div class="col-lg-2 mb-4 mb-lg-0 col-md-6 text-center" data-aos="fade-up" data-aos-delay="300">
+        <div class="person">
+          <img src="images/nitrate.png" alt="Image" class="img-fluid">
+          <h3></h3>
+          <p class="position">Nitrate</p>
+          <p>It also is produced from the biological filter in the aquarium.It is converted from nitrites into nitrates. It is the result of waste and uneaten food buildup. To much can cause disease & algae bloom.</p>
+        </div>
+      </div>
+ 
+    
+    </div>
+  </div>
+</div>
+<!-- end train section -->
+    <div class="bgimg" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+      <div class="container" id="balance-section">
+        <div class="row align-items-center justify-content-center text-center">
+          <div class="col-md-7">
+            <h2 class="">Balance</h2>
+            <p class="lead mx-auto desc mb-5">Just like everything in nature. We exist in harmony. Creating a balance is key in an aquatic space so multiple species can thrive.
+           </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- end parallax 2 -->
+
+
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3 class="text-dark">About Aqua App</h3>
+            <p>A student with a passion for Aquascaping. It was an idea that was brought forth by noticing the lack there of for this application.</p>
+          <a href="https://youtu.be/0AAeLfcYPL4" class="nav-link">Video Explanation</a>
+        </div>
+
+          <div class="col-md-4" id="contact-section">
+            <h3 class="text-dark">Contact</h3>
+            <h5 class="text-dark mb-3">Colton Barney</h5>
+            <h6>Senior Web Application Developer</h6>
+            <p>Address: Normal, Il<br>
+               Phone: (815)-262-7917
+               <br>
+               Email: colton.barney@gmail.com
+               </p>
+          </div>
+
+
+          <div class="col-md-4 ml-auto">
+            <h3 class="text-dark">Links</h3>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#home-section" class="nav-link">Home</a></li>
+              <li><a href="#appreciate-section" class="nav-link">Appreciation</a></li>
+              <li><a href="#record-section" class="nav-link">Records</a></li>
+              <li><a href="#patience-section" class="nav-link">Patience</a></li>
+              <li><a href="#learning-section" class="nav-link">Educate</a></li>
+              <li><a href="#balance-section" class="nav-link">Balance</a></li>
+              <li><a href="#contact-section" class="nav-link">Contact</a></li>
+           
+            </ul>
+          </div>
+
+         
+        </div>
+
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class=" pt-5">
+              <p class="copyright">
+            AquaApp &copy;<script>document.write(new Date().getFullYear());</script>
+            </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+
+
+  </div>
+  
+  <!-- .site-wrap -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.mb.YTPlayer.min.js"></script>
+  <script src="js/main.js"></script>
+ 
+  
+
+
+</body>
+
+</html>
