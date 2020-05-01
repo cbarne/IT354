@@ -851,21 +851,6 @@ h1, h2, h3, h4, h5,
     .class-item:hover p, .class-item:hover span {
       color: #989898; }
 
-.days {
-  width: 100%;
-  padding: 0;
-  margin: 0 0 50px 0; }
-  .days li {
-    text-align: center;
-    display: inline-block;
-    width: 14.25%; }
-    .days li a {
-      background: #eee;
-      padding: 10px;
-      display: block; }
-      .days li a:hover, .days li a.active {
-        background: #f23a2e;
-        color: #fff; }
 
 .bgimg {
   background-position: center;
@@ -951,3 +936,7 @@ h1, h2, h3, h4, h5,
 
 /* ____________________________________ */
 
+#btnlogin {
+  font-size: x-small;
+  background-color: #fff;
+}
