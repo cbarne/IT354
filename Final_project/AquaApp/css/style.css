@@ -845,11 +845,11 @@ h1, h2, h3, h4, h5,
     -ms-transform: scale(1.2);
     transform: scale(1.2);
     z-index: 2;
-    background: #f23a2e; }
+    background: #4c891c; }
     .class-item:hover h2 a {
       color: #fff; }
     .class-item:hover p, .class-item:hover span {
-      color: #ff7c67; }
+      color: #989898; }
 
 .days {
   width: 100%;
@@ -943,3 +943,11 @@ h1, h2, h3, h4, h5,
 
 .footer-section {
   padding-top: 12rem !important; }
+
+
+
+
+
+
+/* ____________________________________ */
+
